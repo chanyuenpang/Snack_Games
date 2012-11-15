@@ -8,6 +8,7 @@ USING_NS_CC;
 
 class BobbleHero : public cocos2d::CCLayer{
     
+    //for test
     const static int BUBBLE_ROW = 15;
     const static int BUBBLE_COL = 9;
     
@@ -19,9 +20,14 @@ class BobbleHero : public cocos2d::CCLayer{
     Bubble * currentBubble = NULL;
     Bubble * nextBubble = NULL;
     
-    float initSpeed = 500; //pix/s
+    
+    float shootSpeed = 500; //pix/s
+    float dropSpeed = 2;
+    float bubbleDropDistance = 0;
     bool shootAble = false;
-    int currentRow = 2;
+    bool inPositionFix = false;
+    
+    int initRow = 5;
     
     CCArray *bubblesData;
     CCArray *bubblesDeleted = NULL;
@@ -33,10 +39,11 @@ class BobbleHero : public cocos2d::CCLayer{
     void initShooter();
     void shootBubble(float angle);
     
-    void addRow(int row);
-    
-    bool bubbleCollisionCheck();
-    void acceptBubble();
+    Bubble * getCollidedBubble();
+    bool isAvailablePostion(int row, int col);
+    CCPoint * getDropPos(Bubble * current, Bubble * collision);
+    void acceptBubble(CCPoint * dropPos);
+    void startCollosionMotion(Bubble * bubble);
     void deleteBubbles(CCArray * bubbles);
     
     void checkDeleteBubbles(Bubble * bubble);
@@ -45,13 +52,24 @@ class BobbleHero : public cocos2d::CCLayer{
     CCArray * getFloatBubbles();
     CCArray * getNeighbors(Bubble * bubble);
     
+    Bubble * getBubble(int row, int col);
+    
+    void addBubble(Bubble * bubble);
+    void removeBubble(Bubble * bubble);
+    void updateBubblePostion(float dt);
+    
     bool checkGameOver();
     
+    //utils
+    CCPoint * getBubblePostion(Bubble * bubble);
+    
 public:
+    CCSpriteBatchNode *bubbleBatch;
+
     virtual bool init();
     static cocos2d::CCScene* scene();
     virtual void update(float dt);
-    virtual void draw();
+    //virtual void draw();
     CREATE_FUNC(BobbleHero);
 };
 

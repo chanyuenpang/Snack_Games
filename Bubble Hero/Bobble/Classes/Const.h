@@ -12,4 +12,12 @@
 #define STAGE_WIDTH CCDirector::sharedDirector()->getWinSize().width
 #define STAGE_HEIGHT CCDirector::sharedDirector()->getWinSize().height
 
+
+#define COLLISION_SENSITIVITY 0.8
+
+#define PI 3.1415926
+#define MAX_SHOOT_ANGLE 75
+
+#define COLLISON_EFFECT_RANG 5
+
 #endif

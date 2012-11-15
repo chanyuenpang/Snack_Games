@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2861C017165542CE00F1E375 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2861C015165542CE00F1E375 /* GameData.cpp */; };
+		2861C01C165543C600F1E375 /* BubbleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2861C018165543C500F1E375 /* BubbleFactory.cpp */; };
+		2861C01D165543C600F1E375 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2861C01A165543C500F1E375 /* GameState.cpp */; };
 		288F9D06162B0E0700F51CEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288F9D05162B0E0700F51CEC /* QuartzCore.framework */; };
 		288F9D08162B0E0700F51CEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288F9D07162B0E0700F51CEC /* OpenGLES.framework */; };
 		288F9D0A162B0E0700F51CEC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288F9D09162B0E0700F51CEC /* OpenAL.framework */; };
@@ -205,9 +208,17 @@
 		288F9FB5162B0E0C00F51CEC /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 288F9FB4162B0E0C00F51CEC /* AppDelegate.cpp */; };
 		28AF0E07163ED1A1005A73E8 /* Bubble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0E04163ED1A1005A73E8 /* Bubble.cpp */; };
 		28AF0E0A163ED207005A73E8 /* BobbleHero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0E08163ED207005A73E8 /* BobbleHero.cpp */; };
+		28E752A31646C38900CEAAC7 /* bubbles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E752A11646C38900CEAAC7 /* bubbles-hd.png */; };
+		28E752A41646C38900CEAAC7 /* bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E752A21646C38900CEAAC7 /* bubbles.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2861C015165542CE00F1E375 /* GameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameData.cpp; path = Classes/GameData.cpp; sourceTree = "<group>"; };
+		2861C016165542CE00F1E375 /* GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameData.h; path = Classes/GameData.h; sourceTree = "<group>"; };
+		2861C018165543C500F1E375 /* BubbleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BubbleFactory.cpp; path = Classes/BubbleFactory.cpp; sourceTree = "<group>"; };
+		2861C019165543C500F1E375 /* BubbleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BubbleFactory.h; path = Classes/BubbleFactory.h; sourceTree = "<group>"; };
+		2861C01A165543C500F1E375 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameState.cpp; path = Classes/GameState.cpp; sourceTree = "<group>"; };
+		2861C01B165543C600F1E375 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameState.h; path = Classes/GameState.h; sourceTree = "<group>"; };
 		288F9D01162B0E0700F51CEC /* Bobble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bobble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288F9D05162B0E0700F51CEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		288F9D07162B0E0700F51CEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -648,6 +659,8 @@
 		28AF0E06163ED1A1005A73E8 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Const.h; path = Classes/Const.h; sourceTree = "<group>"; };
 		28AF0E08163ED207005A73E8 /* BobbleHero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BobbleHero.cpp; path = Classes/BobbleHero.cpp; sourceTree = "<group>"; };
 		28AF0E09163ED207005A73E8 /* BobbleHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BobbleHero.h; path = Classes/BobbleHero.h; sourceTree = "<group>"; };
+		28E752A11646C38900CEAAC7 /* bubbles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bubbles-hd.png"; path = "Resources/bubbles-hd.png"; sourceTree = "<group>"; };
+		28E752A21646C38900CEAAC7 /* bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bubbles.png; path = Resources/bubbles.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +730,8 @@
 		288F9D16162B0E0700F51CEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28E752A11646C38900CEAAC7 /* bubbles-hd.png */,
+				28E752A21646C38900CEAAC7 /* bubbles.png */,
 				288F9D1B162B0E0700F51CEC /* Default.png */,
 				288F9D1F162B0E0700F51CEC /* Icon-72.png */,
 				288F9D21162B0E0700F51CEC /* Icon-Small-50.png */,
@@ -1545,12 +1560,18 @@
 		288F9FB2162B0E0C00F51CEC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2861C018165543C500F1E375 /* BubbleFactory.cpp */,
+				2861C019165543C500F1E375 /* BubbleFactory.h */,
+				2861C01A165543C500F1E375 /* GameState.cpp */,
+				2861C01B165543C600F1E375 /* GameState.h */,
+				288F9FB3162B0E0C00F51CEC /* AppDelegate.h */,
+				288F9FB4162B0E0C00F51CEC /* AppDelegate.cpp */,
+				2861C015165542CE00F1E375 /* GameData.cpp */,
+				2861C016165542CE00F1E375 /* GameData.h */,
 				28AF0E09163ED207005A73E8 /* BobbleHero.h */,
 				28AF0E08163ED207005A73E8 /* BobbleHero.cpp */,
 				28AF0E05163ED1A1005A73E8 /* Bubble.h */,
 				28AF0E04163ED1A1005A73E8 /* Bubble.cpp */,
-				288F9FB3162B0E0C00F51CEC /* AppDelegate.h */,
-				288F9FB4162B0E0C00F51CEC /* AppDelegate.cpp */,
 				28AF0E06163ED1A1005A73E8 /* Const.h */,
 			);
 			name = Classes;
@@ -1615,6 +1636,8 @@
 				288F9D2A162B0E0700F51CEC /* Icon@2x.png in Resources */,
 				288F9D2C162B0E0700F51CEC /* iTunesArtwork in Resources */,
 				288F9DBE162B0E0800F51CEC /* ChangeLog in Resources */,
+				28E752A31646C38900CEAAC7 /* bubbles-hd.png in Resources */,
+				28E752A41646C38900CEAAC7 /* bubbles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1805,6 +1828,9 @@
 				288F9FB5162B0E0C00F51CEC /* AppDelegate.cpp in Sources */,
 				28AF0E07163ED1A1005A73E8 /* Bubble.cpp in Sources */,
 				28AF0E0A163ED207005A73E8 /* BobbleHero.cpp in Sources */,
+				2861C017165542CE00F1E375 /* GameData.cpp in Sources */,
+				2861C01C165543C600F1E375 /* BubbleFactory.cpp in Sources */,
+				2861C01D165543C600F1E375 /* GameState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

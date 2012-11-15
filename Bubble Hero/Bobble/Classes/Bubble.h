@@ -14,25 +14,40 @@
 
 USING_NS_CC;
 
-class Bubble:public CCObject{
+class Bubble:public CCSprite{
     
 public:
+    const static int RADIUS = 15;
     int bubbleID;
     int row = -1;
     int col = -1;
-    int radius = 15;
+    int radius = RADIUS;
     
     bool active = false;
     
     float x;
     float y;
+    float nextX;
+    float nextY;
     float vx = 0;
     float vy = 0;
+    float ax = 0;
+    float ay = 0;
     
-public:
-    Bubble(int id);
-    CCRect rect();
-    Bubble * clone();
+    Bubble(int id, CCTexture2D *texture);
+    void collosionMotion(Bubble * current);
+    void motionComplete(Bubble * bubble);
+    
+    virtual void draw();
+    virtual void update(float dt);
+    
+//private:
+    float oldX = 0;
+    float oldY = 0;
+    
+    float oldVx = 0;
+    float oldVy = 0;
+    
 };
 
 #endif /* defined(__Bobble__Bubble__) */
