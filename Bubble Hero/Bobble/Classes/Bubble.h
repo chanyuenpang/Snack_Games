@@ -17,7 +17,7 @@ USING_NS_CC;
 class Bubble:public CCSprite{
     
 public:
-    const static int RADIUS = 15;
+    const static int RADIUS = 21;
     int bubbleID;
     int row = -1;
     int col = -1;
@@ -42,6 +42,8 @@ public:
     virtual void update(float dt);
     
 //private:
+    bool isRevert;
+    float updateTime = 0;
     float oldX = 0;
     float oldY = 0;
     

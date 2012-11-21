@@ -656,22 +656,22 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "301"
-         endingLineNumber = "301">
+         startingLineNumber = "298"
+         endingLineNumber = "298">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "438"
-         endingLineNumber = "438"
+         startingLineNumber = "435"
+         endingLineNumber = "435"
          landmarkName = "BobbleHero::acceptBubble(CCPoint * dropPos)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -680,11 +680,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "472"
-         endingLineNumber = "472"
+         startingLineNumber = "469"
+         endingLineNumber = "469"
          landmarkName = "BobbleHero::acceptBubble(CCPoint * dropPos)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -693,11 +693,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "410"
-         endingLineNumber = "410"
+         startingLineNumber = "407"
+         endingLineNumber = "407"
          landmarkName = "BobbleHero::getDropPos(Bubble *current, Bubble *collision)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -719,11 +719,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/Bubble.cpp"
-         timestampString = "374687518.192128"
+         timestampString = "374945991.337292"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "122"
-         endingLineNumber = "122"
+         startingLineNumber = "135"
+         endingLineNumber = "135"
          landmarkName = "Bubble::draw()"
          landmarkType = "5">
       </FileBreakpoint>
@@ -732,11 +732,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "278"
-         endingLineNumber = "278"
+         startingLineNumber = "275"
+         endingLineNumber = "275"
          landmarkName = "BobbleHero::getCollidedBubble()"
          landmarkType = "5">
       </FileBreakpoint>
@@ -745,11 +745,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374339255.524091"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "104"
-         endingLineNumber = "104"
+         startingLineNumber = "101"
+         endingLineNumber = "101"
          landmarkName = "BobbleHero::ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -758,11 +758,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374339255.524091"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
          landmarkName = "BobbleHero::ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -771,33 +771,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "423"
-         endingLineNumber = "423"
-         landmarkName = "BobbleHero::startCollosionMotion(Bubble *bubble)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "626"
-         endingLineNumber = "626"
-         landmarkName = "BobbleHero::getConnectedBubble(Bubble *bubble)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374520576.560126"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "420"
@@ -810,11 +784,37 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/BobbleHero.cpp"
-         timestampString = "374339255.524091"
+         timestampString = "374773306.388239"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
+         startingLineNumber = "623"
+         endingLineNumber = "623"
+         landmarkName = "BobbleHero::getConnectedBubble(Bubble *bubble)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Bobble/Classes/BobbleHero.cpp"
+         timestampString = "374773306.388239"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "417"
+         endingLineNumber = "417"
+         landmarkName = "BobbleHero::startCollosionMotion(Bubble *bubble)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Bobble/Classes/BobbleHero.cpp"
+         timestampString = "374773306.388239"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "171"
+         endingLineNumber = "171"
          landmarkName = "BobbleHero::update(float dt)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -823,11 +823,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/Bubble.cpp"
-         timestampString = "374683596.117427"
+         timestampString = "374945686.169659"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "83"
-         endingLineNumber = "83"
+         startingLineNumber = "77"
+         endingLineNumber = "77"
          landmarkName = "Bubble::update(float dt)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -836,11 +836,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Bobble/Classes/Bubble.cpp"
-         timestampString = "374683596.117427"
+         timestampString = "374948420.459112"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
+         startingLineNumber = "85"
+         endingLineNumber = "85"
          landmarkName = "Bubble::update(float dt)"
          landmarkType = "5">
       </FileBreakpoint>

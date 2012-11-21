@@ -64,18 +64,15 @@ void BobbleHero::initShooter(){
         this->addChild(currentBubble);
         this->addChild(nextBubble);
     }else{
-//        this->removeChild(currentBubble,true);
-//        this->removeChild(nextBubble,true);
-        //this->addChild(nextBubble);
         currentBubble = nextBubble;
         nextBubble = new Bubble(int (CCRANDOM_0_1() * 5+1), bubbleBatch->getTexture());
+        
+        nextBubble->x = 603/2 - 4 * nextBubble->radius;
+        nextBubble->y = currentBubble->radius;
         this->addChild(nextBubble);
     }
     
-    nextBubble->x = STAGE_WIDTH/2 - 4 * nextBubble->radius;
-    nextBubble->y = currentBubble->radius;
-    
-    currentBubble->x = STAGE_WIDTH/2;
+    currentBubble->x = 603/2;
     currentBubble->y = currentBubble->radius;
     currentBubble->nextX = currentBubble->x;
     currentBubble->nextY = currentBubble->y;
@@ -126,9 +123,9 @@ void BobbleHero::ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent){
 void BobbleHero::update(float dt){
     updateBubblePostion(dt);
 
-    if (shootAble == true) {
-        bubbleDropDistance += dropSpeed * dt;
-    }
+//    if (shootAble == true) {
+//        bubbleDropDistance += dropSpeed * dt;
+//    }
     
     if (currentBubble != NULL && !shootAble && !inPositionFix) {
         
@@ -457,8 +454,8 @@ void BobbleHero::acceptBubble(CCPoint * dropPos){
         
         currentBubble->oldVx = currentBubble->vx;
         currentBubble->oldVy = currentBubble->vy;
-        currentBubble->vx = shootSpeed * sin(rad);
-        currentBubble->vy = shootSpeed * cos(rad);
+        currentBubble->vx = (point->x-currentBubble->x) / 0.05;  // shootSpeed * sin(rad);
+        currentBubble->vy = (point->y - currentBubble->y)/ 0.05; //shootSpeed * cos(rad);
         inPositionFix = true;
     }else{
         CCLOG("ERROR!!!");

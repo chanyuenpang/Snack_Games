@@ -39,33 +39,49 @@ void Bubble::collosionMotion(Bubble * current){
         float speed = sqrt(current->vx * current->vx + current->vy * current->vy);
         float r = atan2f(offsetX, offsetY);
         
-        this->vx = sinf(r) * speed / offset/4;
-        this->vy = cosf(r) * speed / offset/3;
+        this->vx = sinf(r) * 10 * (COLLISON_EFFECT_RANG * 2 - offset) / COLLISON_EFFECT_RANG * 2;
+        this->vy = cosf(r) * 20 * (COLLISON_EFFECT_RANG * 2 - offset) / COLLISON_EFFECT_RANG * 2;
     }else{
-        this->vx = this->oldVx/4;
-        this->vy = this->oldVy/3;
+        this->vx = this->vx/1.5/2;
+        this->vy = this->vy/1.5/2;
+        
+        if (this->vy < 60) {
+            this->vy = 60;
+        }
     }
     
     this->oldVx = this->vx;
     this->oldVy = this->vy;
     
-    this->ax = -this->vx / 0.16;
-    this->ay = -this->vy / 0.2;
+    this->ax = -this->vx / 0.5;
+    this->ay = -this->vy / 0.5;
+    
+    updateTime = 0;
+    isRevert = false;
 }
 
-
 void Bubble::update(float dt){
-    
     if (!active) {
         return;
+    }
+    
+    updateTime += dt;
+    if (updateTime > 0.1 && !isRevert) {
+        this->vx = - vx/2.5;
+        this->vy = - vy/2.5;
+        ax = - ax/2.5;
+        ay = - ay/2.5;
+        isRevert = true;
     }
     
     this->x += this->vx * dt;
     this->y += this->vy * dt;
     
-    this->vx += this->ax * dt;
-    this->vy += this->ay * dt;
-        
+    if(isRevert){
+        this->vx += this->ax * dt;
+        this->vy += this->ay * dt;
+    }
+    
     float absVx = this->vx > 0 ? this->vx : -this->vx;
     float absVy = this->vy > 0 ? this->vy : -this->vy;
     
@@ -76,23 +92,20 @@ void Bubble::update(float dt){
 //    float offsetY = this->y - this->oldY;
 //    float dis = sqrtf(offsetX * offsetX + offsetY * offsetX);
     
-    if (absVx > absOldVx) {
-        this->x = this->oldX;
-        this->vx = 0;
-        this->ax = 0;
-        //this->unschedule(schedule_selector(Bubble::update));
-    }
-    
-    if(absVy > absOldVy){
-        this->y = this->oldY;
-        this->vy = 0;
-        this->ay = 0;
-    }
-    
-    if(!vx && !vy && !ax && !ay){
+//    if (absVx > absOldVx) {
+//        this->x = this->oldX;
+//        this->vx = 0;
+//        this->ax = 0;
+//    }
+//    
+//    if(absVy > absOldVy){
+//        this->y = this->oldY;
+//        this->vy = 0;
+//        this->ay = 0;
+//    }
+    if(updateTime >= 0.5/*!vx && !vy && !ax && !ay*/){
         this->active = false;
     }
-    
     this->setPosition(CCPointMake(x, y));
 }
 

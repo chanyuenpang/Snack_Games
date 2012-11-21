@@ -18,6 +18,6 @@
 #define PI 3.1415926
 #define MAX_SHOOT_ANGLE 75
 
-#define COLLISON_EFFECT_RANG 5
+#define COLLISON_EFFECT_RANG 6
 
 #endif

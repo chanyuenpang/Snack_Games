@@ -1,12 +1,21 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+//
+//  GameBoard.h
+//  Bobble
+//
+//  Created by VIP on 11/21/12.
+//
+//
 
-#include "cocos2d.h"
+#ifndef __Bobble__GameBoard__
+#define __Bobble__GameBoard__
+
+#include <iostream>
+#include "cocos2d.h"  
 #include "Bubble.h"
 
 USING_NS_CC;
 
-class BobbleHero : public cocos2d::CCLayer{
+class GameBoard:public CCSprite{
     
     //for test
     const static int BUBBLE_ROW = 5;
@@ -64,12 +73,12 @@ class BobbleHero : public cocos2d::CCLayer{
     
 public:
     CCSpriteBatchNode *bubbleBatch;
-
+    
     virtual bool init();
     static cocos2d::CCScene* scene();
     virtual void update(float dt);
     //virtual void draw();
-    CREATE_FUNC(BobbleHero);
+
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif /* defined(__Bobble__GameBoard__) */

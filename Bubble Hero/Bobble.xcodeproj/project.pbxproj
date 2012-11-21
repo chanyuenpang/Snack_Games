@@ -210,6 +210,7 @@
 		28AF0E0A163ED207005A73E8 /* BobbleHero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0E08163ED207005A73E8 /* BobbleHero.cpp */; };
 		28E752A31646C38900CEAAC7 /* bubbles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E752A11646C38900CEAAC7 /* bubbles-hd.png */; };
 		28E752A41646C38900CEAAC7 /* bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E752A21646C38900CEAAC7 /* bubbles.png */; };
+		28F8CDCE165D307B003A7022 /* GameBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28F8CDCC165D307B003A7022 /* GameBoard.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -661,6 +662,8 @@
 		28AF0E09163ED207005A73E8 /* BobbleHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BobbleHero.h; path = Classes/BobbleHero.h; sourceTree = "<group>"; };
 		28E752A11646C38900CEAAC7 /* bubbles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bubbles-hd.png"; path = "Resources/bubbles-hd.png"; sourceTree = "<group>"; };
 		28E752A21646C38900CEAAC7 /* bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bubbles.png; path = Resources/bubbles.png; sourceTree = "<group>"; };
+		28F8CDCC165D307B003A7022 /* GameBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameBoard.cpp; path = Classes/GameBoard.cpp; sourceTree = "<group>"; };
+		28F8CDCD165D307B003A7022 /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBoard.h; path = Classes/GameBoard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1560,19 +1563,21 @@
 		288F9FB2162B0E0C00F51CEC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				28F8CDCC165D307B003A7022 /* GameBoard.cpp */,
+				28F8CDCD165D307B003A7022 /* GameBoard.h */,
+				288F9FB4162B0E0C00F51CEC /* AppDelegate.cpp */,
+				288F9FB3162B0E0C00F51CEC /* AppDelegate.h */,
+				28AF0E08163ED207005A73E8 /* BobbleHero.cpp */,
+				28AF0E09163ED207005A73E8 /* BobbleHero.h */,
+				28AF0E04163ED1A1005A73E8 /* Bubble.cpp */,
+				28AF0E05163ED1A1005A73E8 /* Bubble.h */,
 				2861C018165543C500F1E375 /* BubbleFactory.cpp */,
 				2861C019165543C500F1E375 /* BubbleFactory.h */,
-				2861C01A165543C500F1E375 /* GameState.cpp */,
-				2861C01B165543C600F1E375 /* GameState.h */,
-				288F9FB3162B0E0C00F51CEC /* AppDelegate.h */,
-				288F9FB4162B0E0C00F51CEC /* AppDelegate.cpp */,
+				28AF0E06163ED1A1005A73E8 /* Const.h */,
 				2861C015165542CE00F1E375 /* GameData.cpp */,
 				2861C016165542CE00F1E375 /* GameData.h */,
-				28AF0E09163ED207005A73E8 /* BobbleHero.h */,
-				28AF0E08163ED207005A73E8 /* BobbleHero.cpp */,
-				28AF0E05163ED1A1005A73E8 /* Bubble.h */,
-				28AF0E04163ED1A1005A73E8 /* Bubble.cpp */,
-				28AF0E06163ED1A1005A73E8 /* Const.h */,
+				2861C01A165543C500F1E375 /* GameState.cpp */,
+				2861C01B165543C600F1E375 /* GameState.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1831,6 +1836,7 @@
 				2861C017165542CE00F1E375 /* GameData.cpp in Sources */,
 				2861C01C165543C600F1E375 /* BubbleFactory.cpp in Sources */,
 				2861C01D165543C600F1E375 /* GameState.cpp in Sources */,
+				28F8CDCE165D307B003A7022 /* GameBoard.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1907,7 +1913,7 @@
 				GCC_PREFIX_HEADER = Bobble/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Bobble/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Bobble/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -1920,6 +1926,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1935,7 +1942,7 @@
 				GCC_PREFIX_HEADER = Bobble/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Bobble/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Bobble/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -1948,6 +1955,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
