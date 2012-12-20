@@ -12,7 +12,10 @@
 #include <iostream>
 
 enum GameState{
-    
+    Running,
+    Pause,
+    Over,
+    EffectTime
 };
 
 

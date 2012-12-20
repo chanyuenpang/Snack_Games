@@ -19,6 +19,7 @@ Bubble::Bubble(int id, CCTexture2D * texture){
 }
 
 void Bubble::collosionMotion(Bubble * current){
+    //if(active)  return;
     active = true;
     //CCLOG("collosionMotion");
     
@@ -36,7 +37,7 @@ void Bubble::collosionMotion(Bubble * current){
     }
 
     if (current != this) {
-        float speed = sqrt(current->vx * current->vx + current->vy * current->vy);
+        //float speed = sqrt(current->vx * current->vx + current->vy * current->vy);
         float r = atan2f(offsetX, offsetY);
         
         this->vx = sinf(r) * 10 * (COLLISON_EFFECT_RANG * 2 - offset) / COLLISON_EFFECT_RANG * 2;
@@ -82,11 +83,11 @@ void Bubble::update(float dt){
         this->vy += this->ay * dt;
     }
     
-    float absVx = this->vx > 0 ? this->vx : -this->vx;
-    float absVy = this->vy > 0 ? this->vy : -this->vy;
-    
-    float absOldVx = this->oldVx > 0 ? this->oldVx : -this->oldVx;
-    float absOldVy = this->oldVy > 0 ? this->oldVy : -this->oldVy;
+//    float absVx = this->vx > 0 ? this->vx : -this->vx;
+//    float absVy = this->vy > 0 ? this->vy : -this->vy;
+//    
+//    float absOldVx = this->oldVx > 0 ? this->oldVx : -this->oldVx;
+//    float absOldVy = this->oldVy > 0 ? this->oldVy : -this->oldVy;
     
 //    float offsetX = this->x - this->oldX;
 //    float offsetY = this->y - this->oldY;
